@@ -1,4 +1,4 @@
-var ejercicio = 5;
+var ejercicio = 8;
 
 switch (ejercicio) {
   case 1:
@@ -15,6 +15,15 @@ switch (ejercicio) {
     break;
   case 5:
     Exercise5();
+    break;
+  case 6:
+    Exercise6();
+    break;
+  case 7:
+    Exercise7();
+    break;
+  case 8:
+    Exercise8();
     break;
 }
 
@@ -72,12 +81,49 @@ function Exercise5() {
   // Dados tres números enteros, cada uno en el 
   // rango [-10000, 10000], se debe mostrar
   // cuál es el mayor de todos.
-  var mayor = [-234, -17, -891];
-  var count = 2;
-  for (let i = 0; i < mayor.length; i++) {
-    if (count > mayor[i]){
-      count = mayor[i];
+  var num1 = -234;
+  var num2 = -17;
+  var num3 = -891;
+  console.log(Math.max(num1, num2, num3))
+}
+function Exercise6() {
+  //Haya si un numero es multiplo de 2, 3, 5 o 7.\
+  var num = 81;
+  if (num % 2 == 0) {
+    console.log('Is a multiple of 2.')
+  } else if (num % 3 == 0) {
+    console.log('Is a multiple of 3.')
+  } else if (num % 5 == 0) {
+    console.log('Is a multiple of 5')
+  } else if (num % 7 == 0) {
+    console.log('Is a multiple of 7')
+  } else {
+    console.log('Is not a multiple of any.')
+  }
+}
+function Exercise7() {
+  //dado un entero positivo N se alternen estos 
+  //mensajes Hola mundo y Hello world.
+  var n = 7;
+  for (let i = 0; i < n; i++) {
+    if (i == 0) {
+      console.log('Hola mundo.')
+    } else if (i % 2 == 0) {
+      console.log('Hola mundo.')
+    } else {
+      console.log('Hello world.')
     }
   }
-  console.log(count);
+}
+function Exercise8() {
+  //suma de los cubos desde 1 hasta N.
+  var n = 5;
+  var sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i**3;
+  }
+  console.log(sum);
+}
+function Exercise9(){
+  
 }
